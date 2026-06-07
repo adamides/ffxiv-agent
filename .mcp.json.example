@@ -1,0 +1,15 @@
+{
+  "//": "OPTIONAL Google Sheets integration. Copy this file to `.mcp.json` (gitignored) and fill in your own paths. Not required for log analysis — only for writing mit plans into a Google Sheet you own. See README -> 'Optional: Google Sheets output'.",
+  "//server": "Uses the third-party xing5/mcp-google-sheets server. Install it with: pipx install mcp-google-sheets  (or: pip install --user mcp-google-sheets). Then point `command` at the installed executable.",
+  "mcpServers": {
+    "google-sheets": {
+      "command": "mcp-google-sheets",
+      "//command_note": "If the executable isn't on your PATH, use its absolute path, e.g. on Windows: C:\\Users\\<you>\\AppData\\Roaming\\Python\\Python3XX\\Scripts\\mcp-google-sheets.exe",
+      "env": {
+        "//SERVICE_ACCOUNT_PATH": "Absolute path to YOUR Google Cloud service-account JSON key. Create a service account, enable the Sheets API, download the key, and share the target spreadsheet with the service account's email. Never commit the key.",
+        "SERVICE_ACCOUNT_PATH": "/absolute/path/to/your-service-account-key.json",
+        "GOOGLE_APPLICATION_CREDENTIALS": "/absolute/path/to/your-service-account-key.json"
+      }
+    }
+  }
+}

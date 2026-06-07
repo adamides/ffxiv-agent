@@ -1,0 +1,6 @@
+# Normalize line endings: store LF in the repo, check out native on each OS.
+# Keeps diffs clean across Windows/macOS/Linux contributors.
+* text=auto eol=lf
+
+# Python scripts stay LF even on Windows checkouts.
+*.py text eol=lf
