@@ -274,10 +274,11 @@ Role actions: see **Tank role actions**. WAR is the self-sustain tank — its mi
 
 ### Nascent Flash
 - **Log status(es):** `Nascent Flash` (self), `Nascent Glint` (ally), `Stem the Flow`, `Stem the Tide`
-- **Effect:** the ally-targeted version of Bloodwhetting — grants the targeted ally −10% (Nascent Glint) + heal-on-WS + Stem the Flow/Tide
-- **Scope:** targeted  **Coverage:** all
+- **Effect:** the ally-targeted version of Bloodwhetting — grants the targeted ally −10% (Nascent Glint) + heal-on-WS + Stem the Flow/Tide. The casting WAR also gains the `Nascent Flash` self-heal buff, but the −10% mit goes to the **ally**, not the WAR.
+- **Scope:** targeted ally — **cannot be cast on self.** The self-cast counterpart is [Bloodwhetting](#bloodwhetting-upgrade-of-raw-intuition); they share the 25s recast, so a WAR chooses each press between protecting itself (Bloodwhetting) and an ally (Nascent Flash). Mirrors the PLD [Holy Sheltron](#holy-sheltron)/[Intervention](#intervention) split.  **Coverage:** all
 - **Duration / Recast:** 8s / 25s
 - **Tags:** `targeted-mit`, `percent-mit`, `barrier`, `tank-mit`, `heal`
+- **Agent note:** a `Nascent Glint` status on a player is *received* co-tank cover from a WAR (the `Nascent Flash` status marks the WAR who cast it) — read `Nascent Glint`, not `Nascent Flash`, to attribute the −10% to the covered player. Contrast GNB [Heart of Corundum](#heart-of-stone--heart-of-corundum) and DRK [The Blackest Night](#the-blackest-night), which **can** target self or ally, so they carry no such caster-vs-target inference.
 
 ### Equilibrium
 - **Log status(es):** `Equilibrium` (regen)
