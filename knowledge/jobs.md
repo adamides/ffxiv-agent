@@ -178,9 +178,10 @@ Role actions: see **Tank role actions**. PLD is the shield/barrier tank — much
 ### Intervention
 - **Log status(es):** `Intervention`, `Knight's Resolve` (and `Knight's Benediction` regen on target)
 - **Effect:** −10% damage taken on a targeted ally; Knight's Resolve adds −10% for 4s; regen (250 potency)
-- **Scope:** targeted  **Coverage:** all
+- **Scope:** targeted ally — **cannot be cast on self.** The self-cast counterpart is [Holy Sheltron](#holy-sheltron); both spend Oath Gauge, so a PLD's Oath budget is shared between protecting itself (Holy Sheltron) and protecting an ally (Intervention).  **Coverage:** all
 - **Duration / Recast:** 8s (+4s Resolve) / 10s — gated by 50 Oath Gauge
 - **Tags:** `targeted-mit`, `percent-mit`, `tank-mit`, `heal`
+- **Agent note:** an `Intervention` status on a player always came from the *other* tank (a PLD), never from that player on themselves — useful for attributing a tank's incoming-mit to a co-tank cover (e.g. on a shared/cleave buster).
 
 ### Cover
 - **Log status(es):** `Cover` (and `Covered` on the protected ally)
