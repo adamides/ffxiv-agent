@@ -29,7 +29,8 @@ knowledge/
 └── fights/
     └── dancing-mad-ultimate.md   # an observed mechanic catalog (NOT a mit plan)
 scripts/
-└── fetch_fight.py      # FFLogs GraphQL fetcher → paste-ready decoded text
+├── fetch_fight.py      # FFLogs GraphQL fetcher → paste-ready decoded text
+└── fetch_raidplan.py   # raidplan.io plan → per-step FFXIV clock/compass digest
 .claude/
 └── commands/ffxivanalyze.md      # the /ffxivanalyze slash command for Claude Code
 ```
