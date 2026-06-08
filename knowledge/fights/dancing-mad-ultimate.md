@@ -20,7 +20,9 @@ Match each mechanic to a pattern in [primitives.md](../primitives.md); cross-cut
 
 Built from FFLogs report `XnWJp61MzhGkFtBc`, **fight 37** (deepest prog pull seen, 3:10, full wipe inside P1). Pull through `py scripts/fetch_fight.py XnWJp61MzhGkFtBc 37`. Cross-referenced against the static's P1 strat doc ("UMAD P1: Merry Go Round," XIVPlan v4.0). Composition for this pull (anonymized to role labels): WAR (MT), PLD (OT), WHM-less — SGE, SCH; DPS DRG, VPR, DNC, RDM.
 
-**Second reference pull:** report `v8nM1zQ6C2FYjPVa`, **fight 52** (4:36 — the deepest pull, clearing all of P1 and wiping in the P2 *God Kefka* towers). Pull via `py scripts/fetch_fight.py v8nM1zQ6C2FYjPVa 52`. Same core comp **except the OT-side healer is AST, not SCH** — a healer swap between reports (the static's current comp is SGE+AST). This pull's clean P1 is the source for the **timeline placements and damage values** added below; the catalog stays **P1-only** (the P2 data is logged but out of scope here). Only P1 death in this pull: the VPR at 3:11 (finale).
+**Second reference pull:** report `v8nM1zQ6C2FYjPVa`, **fight 52** (4:36 — the deepest pull, clearing all of P1 and wiping in the P2 *God Kefka* towers). Pull via `py scripts/fetch_fight.py v8nM1zQ6C2FYjPVa 52`. Same core comp **except the OT-side healer is AST, not SCH** — a healer swap between reports (the static's current comp is SGE+AST). This pull's clean P1 is the source for the **timeline placements and damage values** in the P1 catalog below. Only P1 death in this pull: the VPR at 3:11 (finale).
+
+**Full-clear reference:** report `ApYjk8dZqz7LRbMy`, **fight 1** (18:40 **KILL**, no deaths). Pull via `py scripts/fetch_fight.py ApYjk8dZqz7LRbMy 1`. This is the source for the **phase map** below and for **P2 (God Kefka) onward**. It's a *different* static — a different comp (PLD, DRK, AST, SCH; DNC, PCT, RPR, VPR — anonymized to role labels in any catalog text), and a **clean clear**: it shows each phase's *intended* execution but **not its failure modes**, which still need a prog log per phase.
 
 **Log-name ↔ strat-name bridge.** The log records *internal damage-ability* names; the strat doc and players use *telegraph* names. The agent must bridge them:
 
@@ -35,6 +37,31 @@ Built from FFLogs report `XnWJp61MzhGkFtBc`, **fight 37** (deepest prog pull see
 | Double-Trouble Trap | "confetti" (the hot-potato debuff) |
 | Tele-Portent / Tele-Trouncing | the teleporter placement / activation |
 | Revolting Ruin III | "Ruin III" cleave tankbuster |
+
+---
+
+## Phase map
+
+Dancing Mad (Ultimate) runs **five phases**. Boundaries below are read from the full clear `ApYjk8dZqz7LRbMy` fight 1; each phase transition shows in the log as an **auto-attack-only lull** — the boss stays targetable and keeps auto-attacking the tank but stops casting while it transforms, so the lull itself needs **no raidwide mit** (just the autos).
+
+| Phase | Name | Clear timing | Catalog status |
+|---|---|---|---|
+| **P1** | OG Kefka ("Merry Go Round") | 0:00 – 3:09 | **Authored** (below) |
+| — | *transition* | 3:10 – 3:40 | autos only — no cast damage |
+| **P2** | God Kefka | 3:41 – 6:19 | skeleton below; mechanics not yet authored |
+| — | *transition* | 6:21 – 7:14 | autos only — no cast damage |
+| **P3** | Chaos and Exdeath | 7:15 – TBD | uncharted |
+| **P4** | Kefka Says | TBD | uncharted |
+| **P5** | Ultimate Kefka | TBD – 18:40 (kill) | uncharted |
+
+Phase names are the static's. P1/P2 boundaries are confirmed against the clear; P3 starts ~7:15; the P3→P4 and P4→P5 boundaries are **not yet pinned** (distinctive abilities noted below for when they're charted).
+
+**P2 (God Kefka) skeleton** — the clean-clear order, bracketed by the two **Ultimate Embrace** busters:
+Ultimate Embrace #1 (solo MT, ~1.25M *physical*) → **Forsaken** (raidwide, ~50% mit) → **spell-towers** (`The Path of Light` telegraph + `Spelldriver`/`Spellscatter`/`Spellwave` + the `Spells' Trouble` / `Unknown_13DC/DD/DE` Magic-Vuln puzzle — the static's old prog wall) → **Past's End / Future's End** cycles → **Wings of Destruction** → Ultimate Embrace #2 (shared 2-tank). Failure modes (esp. the tower vuln puzzle and the UE#2 share) are **not** visible in this clean clear and need a P2 prog log.
+
+**Later-phase ability fingerprints** (for future charting, not yet placed):
+- **P3 Chaos and Exdeath** (~7:15+): Bowels of Agony, Stray Flames, Inferno, Cyclone, Thunder III (~1.47M TB), Tsunami, Earthquake, **Nothingness** (~10M single-target soaks).
+- **P4 / P5** (Kefka Says / Ultimate Kefka): the `Ultima *` set (Ultima Upsurge / Repeater / Blaster), Grand Cross, Chaotic Holy (~11M) / Chaotic Flare / Chaotic Flood, White/Black Antilight.
 
 ---
 
