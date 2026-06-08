@@ -201,6 +201,64 @@ Abilities seen in the summary not yet pinned to a specific GI sequence:
 - **`Wave Cannon`** (magical, ~365k, **8 hits** — full party) — an 8-target **raidwide**. *Placed (pull 52): fires at **0:43**, the single biggest P1 raidwide; the static stacks heavy party mit here (~40–60%), comfortably over-covered.*
 - **`Attack`** (physical ~159k / unknown ~453k) — auto-attacks on the MT; the ~453k "unknown" instances on the VPR at 2:56–2:57 are likely cleave/positional rather than true autos. *Open: confirm the high "Attack" hits aren't a mislabeled mechanic.*
 
+# P2: God Kefka
+
+P1 transforms into **God Kefka** across an auto-only lull (3:10–3:40 in the clear — see [Phase map](#phase-map); no mit needed there). The phase is bookended by two **Ultimate Embrace** tank busters and built around one signature body-check: the **spell-towers** (`Spells' Trouble` vuln puzzle), the static's longest-standing P2 wall.
+
+Source for this section: the clean clear `ApYjk8dZqz7LRbMy` f1 (intended execution + values) cross-referenced with two wipes from `8wTfHmWy2JgrcbQL` — **f33** (4:33, wiped in the spell-towers) and **f21** (6:27, wiped to Wings of Destruction at the phase end). All players anonymized to role labels.
+
+## Ultimate Embrace #1 (opening tank buster)
+
+**Observed.** At **3:41–3:42** (clear), `Ultimate Embrace` — **physical**, max unmit ~1.25M — lands on **both tanks** (PLD ~1.25M → 26k taken behind Guardian + Holy Sheltron + The Spire / Intersection / Divine Veil shields; DRK ~1.20M → 133k at 72% mit). No Damage Down. This is the fight's first big **physical** hit — contrast P1's all-magical profile ([fundamentals.md](../fundamentals.md#damage-types-physical-vs-magical)).
+
+**Resolution.** **Tank buster** ([primitives.md](../primitives.md#tankbuster)), physical. Here both tanks ate it with **stacked personal mit + a shield wall** rather than an invuln. The static's own sheet models UE#1 as a *solo MT invuln* (WAR Holmgang / PLD Hallowed) and UE#2 as the shared 2-tank — so execution varies by group; classify by outcome (both work). Because it's **physical**, magic-weighted mit (Dark Mind, Magick Barrier) is partly wasted — favour all-school mit (Rampart, Reprisal, Guardian/Shadowed Vigil) + raw shields.
+
+**Open questions.** Is `Ultimate Embrace` inherently a **2-tank hit** (both tanks show ~equal ~1.25M unmit, which reads shared/cleaved) or a single-target the two tanks chose to share? Confirm whether solo-invuln vs 2-tank-share is a strat choice or forced by the cast.
+
+## Forsaken (raidwide)
+
+**Observed.** At **3:56 and 3:58** (clear), `Forsaken` — magical, 8-target, two pulses — at ~50% mit: first pulse ~210–290k unmit → ~105–132k taken; second pulse ~480–573k unmit → similar taken behind the heavier stack (Reprisal + Feint + Addle + Seraphic Illumination + Shield Samba + Collective Unconscious + Sacred Soil + a barrier). No deaths, no Damage Down.
+
+**Resolution.** **Raidwide** ([primitives.md](../primitives.md#raidwide)), two-hit, magical — designed party damage. The ~50% realized mit (a full party stack + barrier) covers it comfortably; a "designed party damage" window, not a failure point. `Forsaken Bonds` (in the fight-wide summary) is a related tethered/chain variant, not isolated to a timestamp here.
+
+**Open questions.** Whether the two pulses are one cast's double-hit or two casts; the role of `Forsaken Bonds` (tether/chain variant) in the P2 timeline.
+
+## The spell-towers — `Spells' Trouble` vuln puzzle (THE P2 WALL)
+
+**Observed.** At **3:58** (both logs) `Environment` stamps **all 8 players** with `Spells' Trouble` **×4** (~32–85s) plus one of three assignment debuffs — `Unknown_13DC` / `Unknown_13DD` / `Unknown_13DE` (~12–43s, refreshed ~4:10 and ~4:20). `The Path of Light` (unknown school, **0 damage**) telegraphs. Then **two resolve waves** (~4:10 and ~4:20) deal `Spelldriver` / `Spellscatter` / `Spellwave` (magical); resolved cleanly these land **~95–190k** per player at 0–10% mit. Brief 1–2s Magic Vulns (Kefka) stamp each wave.
+
+**Failure (f33, 4:33).** The **RDM took `Spellwave` 1,935,022 (~1.74M taken)** at 4:20 — ~10× the clean ~150–190k share — and **died at 4:23**; the missing body then cascaded the whole party 4:28–4:31. The **soak-while-vuln'd / wrong-spell signature**: a player resolved the wrong spell (or resolved it carrying the magic vuln), ate an undivided ~1.9M, and the broken body count wiped the follow-up ([fundamentals.md](../fundamentals.md#the-8-player-budget)).
+
+**Resolution.** A **spell-assignment body-check** — the `Unknown_13DC/DD/DE` debuffs sort players into three groups (one per spell), and each group resolves *its* spell in the assigned spot across the two waves; correct resolution divides each spell to the ~95–190k share. **Mit does not fix this** — the ~1.9M is an unsoaked/mis-assigned hit, solved by playing the assignment, not cooldowns (mit follows damage, not mechanic type — [fundamentals.md](../fundamentals.md)). The clean clear ran the waves at ~0–10% mit and lived, confirming the correct share is calibrated survivable.
+
+**Open questions.** The exact mapping of `Unknown_13DC/DD/DE` → spell type and → arena position; what the `Spells' Trouble ×4` stacks count toward (a pass/expiry?); whether the per-wave magic vuln is by-design (a two-hit amplifier like P1's fire) or a failure marker. **Needs the static's God-Kefka-towers strat doc to pin the assignment.**
+
+## Past's End / Future's End (the time mechanic)
+
+**Observed.** `Past's End` and `Future's End` (both magical, ~150–176k max unmit) alternate through and after the tower window: clear shows Future's End 4:19–4:20 & 5:01–5:02, Past's End 4:40–4:41 & 5:22–5:23 (each a two-tick hit, ~10–27% mit, ~60–120k taken). No deaths in the clear; in f33 `Past's End` (~65–165k) landed alongside the lethal Spellwave.
+
+**Resolution.** **UNKNOWN — partially.** A paired "past/future" set, likely a rewind/forward positional mechanic tied to the spell-tower assignment. Damage-wise both are **survivable designed hits** (~60–120k taken) — not a mit problem; the danger is positional. Tentatively the same body-check's resolve damage.
+
+**Open questions.** Are Past's/Future's End the **tower-resolve (soak) damage** or separate raidwides? What positional rule distinguishes "past" vs "future"? Do they share the `Spells' Trouble` assignment or run independently?
+
+## Wings of Destruction (phase-end heavy hit)
+
+**Observed.** At **6:11–6:12**, `Wings of Destruction` — magical, two-hit. **Clear:** ~669k unmit at ~57–61% mit → ~166–246k taken (survived). **Failure (f21):** the four non-tank players (DRG/BLM/BRD/AST) took **~985k–1.13M unmit at only 27% mit → ~720–824k taken** on the first hit and **died 6:14**; the **DRK survived at 75% mit** (636k → 161k).
+
+**Resolution.** A **heavy magical hit** at the phase end demanding a deep mit stack (and likely a share/position). The f21 wipe is a **realized-mit / under-share failure**: 27% party mit left ~800k on squishies (lethal), while the tank's 75% personal stack lived — the mit gap is the story, not an overkill mechanic failure. The per-player unmit being **lower in the clear (669k) than the wipe (~1.1M)** suggests Wings is **shared/divided** — fewer bodies in the wipe's group → bigger per-head hit ([fundamentals.md](../fundamentals.md#how-mitigation-stacks)).
+
+**Open questions.** Is Wings a **stack/role-split** (the lower clear unmit implies sharing) or a flat raidwide whose unmit varied for another reason? Intended mit plan (party % + barrier vs a designated share)? Why only those four players took the lethal version in f21 — a positional/group failure?
+
+## Ultimate Embrace #2 (phase-end shared buster)
+
+**Observed.** At **6:18–6:19** (clear), a second `Ultimate Embrace` — physical, ~1.25M max unmit — on **both tanks** at **75–77% mit** → ~156–177k taken (survived). In f21 the party had already collapsed to Wings (6:14) before a clean UE#2; the trailing 6:19–6:25 deaths are the wipe completing.
+
+**Resolution.** **Tank buster** ([primitives.md](../primitives.md#tankbuster)), the bookend twin of UE#1, taken here as a **2-tank shared** hit with stacked mit. The static's sheet models UE#2 as the explicit shared "Kitchen Sink" buster (vs UE#1's solo invuln) — consistent with both tanks showing ~equal unmit here.
+
+**Open questions.** As UE#1: confirm whether the 2-tank share is forced or chosen, and the intended invuln-vs-Kitchen-Sink split between the two Embraces.
+
+---
+
 # Catalog conventions used here
 
 - Mechanics are classified **by outcome, not strategy** ([CLAUDE.md](../../CLAUDE.md)): a non-standard execution that survived is a success, flagged as an observation.
