@@ -211,9 +211,9 @@ Source for this section: the clean clear `ApYjk8dZqz7LRbMy` f1 (intended executi
 
 **Observed.** At **3:41–3:42** (clear), `Ultimate Embrace` — **physical**, max unmit ~1.25M — lands on **both tanks** (PLD ~1.25M → 26k taken behind Guardian + Holy Sheltron + The Spire / Intersection / Divine Veil shields; DRK ~1.20M → 133k at 72% mit). No Damage Down. This is the fight's first big **physical** hit — contrast P1's all-magical profile ([fundamentals.md](../fundamentals.md#damage-types-physical-vs-magical)).
 
-**Resolution.** **Tank buster** ([primitives.md](../primitives.md#tankbuster)), physical. Here both tanks ate it with **stacked personal mit + a shield wall** rather than an invuln. The static's own sheet models UE#1 as a *solo MT invuln* (WAR Holmgang / PLD Hallowed) and UE#2 as the shared 2-tank — so execution varies by group; classify by outcome (both work). Because it's **physical**, magic-weighted mit (Dark Mind, Magick Barrier) is partly wasted — favour all-school mit (Rampart, Reprisal, Guardian/Shadowed Vigil) + raw shields.
+**Resolution.** **Proximity tank buster** ([primitives.md](../primitives.md#tankbuster)), physical — it targets the **nearest and farthest players** (by distance, *not* #1/#2 enmity), so the two tanks deliberately position as the nearest and farthest bodies to eat both hits. This is why both tanks show ~equal ~1.25M unmit. Each targeted tank covers their hit with **stacked personal mit + a shield wall** (or an invuln — see below). Because it's **physical**, magic-weighted mit (Dark Mind, Magick Barrier) is partly wasted — favour all-school mit (Rampart, Reprisal, Guardian/Shadowed Vigil) + raw shields.
 
-**Open questions.** Is `Ultimate Embrace` inherently a **2-tank hit** (both tanks show ~equal ~1.25M unmit, which reads shared/cleaved) or a single-target the two tanks chose to share? Confirm whether solo-invuln vs 2-tank-share is a strat choice or forced by the cast.
+**Notes for the agent.** Targeting is **proximity-based**, so a non-tank caught as the nearest/farthest body would eat a ~1.25M physical buster — a positioning failure, not a mit one. The static's sheet models UE#1 as a *solo MT invuln* (WAR Holmgang / PLD Hallowed) and UE#2 as the shared 2-tank Kitchen Sink; both are valid ways to cover the two proximity targets (classify by outcome).
 
 ## Forsaken (raidwide)
 
@@ -231,15 +231,15 @@ Source for this section: the clean clear `ApYjk8dZqz7LRbMy` f1 (intended executi
 
 **Resolution.** A **spell-assignment body-check** — the `Unknown_13DC/DD/DE` debuffs sort players into three groups (one per spell), and each group resolves *its* spell in the assigned spot across the two waves; correct resolution divides each spell to the ~95–190k share. **Mit does not fix this** — the ~1.9M is an unsoaked/mis-assigned hit, solved by playing the assignment, not cooldowns (mit follows damage, not mechanic type — [fundamentals.md](../fundamentals.md)). The clean clear ran the waves at ~0–10% mit and lived, confirming the correct share is calibrated survivable.
 
-**Open questions.** The exact mapping of `Unknown_13DC/DD/DE` → spell type and → arena position; what the `Spells' Trouble ×4` stacks count toward (a pass/expiry?); whether the per-wave magic vuln is by-design (a two-hit amplifier like P1's fire) or a failure marker. **Needs the static's God-Kefka-towers strat doc to pin the assignment.**
+**Open questions.** The exact mapping of `Unknown_13DC/DD/DE` → spell type and → arena position; what the `Spells' Trouble ×4` stacks count toward (a pass/expiry?); whether the per-wave magic vuln is by-design (a two-hit amplifier like P1's fire) or a failure marker. **Strat reference:** the static's tower raidplan — <https://raidplan.io/plan/UATE__aDcw1-bgVv> (a client-rendered plan; the position/role assignment must be read off the rendered board by a human and transcribed here — not machine-extractable).
 
 ## Past's End / Future's End (the time mechanic)
 
 **Observed.** `Past's End` and `Future's End` (both magical, ~150–176k max unmit) alternate through and after the tower window: clear shows Future's End 4:19–4:20 & 5:01–5:02, Past's End 4:40–4:41 & 5:22–5:23 (each a two-tick hit, ~10–27% mit, ~60–120k taken). No deaths in the clear; in f33 `Past's End` (~65–165k) landed alongside the lethal Spellwave.
 
-**Resolution.** **UNKNOWN — partially.** A paired "past/future" set, likely a rewind/forward positional mechanic tied to the spell-tower assignment. Damage-wise both are **survivable designed hits** (~60–120k taken) — not a mit problem; the danger is positional. Tentatively the same body-check's resolve damage.
+**Resolution.** **Dodgeable directional AOEs from the clones** ([Hazard](../primitives.md#hazard-avoidable-ground-aoe), avoidable). God Kefka's clones fire a large AOE either **in front of or behind** themselves; `Past's End` and `Future's End` are the two shots, read off each clone's facing and **dodged to the safe side**. Not a soak and **not mit-solved** — taking the full AOE is the failure. Player facing/position isn't in the log, so a clean dodge reads as low/zero and a clip reads as the ~60–120k hit seen here (the clear's mid-size values are clips/edge damage, not a designed party-wide soak).
 
-**Open questions.** Are Past's/Future's End the **tower-resolve (soak) damage** or separate raidwides? What positional rule distinguishes "past" vs "future"? Do they share the `Spells' Trouble` assignment or run independently?
+**Open questions.** Which of Past's / Future's End is the **front** shot vs the **behind** shot; how many clones fire per set and the safe-spot geometry; whether the ~60–120k in the clear is unavoidable chip or just imperfect dodges; whether the clone shots interleave with the spell-tower waves or are a distinct sub-phase.
 
 ## Wings of Destruction (phase-end heavy hit)
 
@@ -253,9 +253,9 @@ Source for this section: the clean clear `ApYjk8dZqz7LRbMy` f1 (intended executi
 
 **Observed.** At **6:18–6:19** (clear), a second `Ultimate Embrace` — physical, ~1.25M max unmit — on **both tanks** at **75–77% mit** → ~156–177k taken (survived). In f21 the party had already collapsed to Wings (6:14) before a clean UE#2; the trailing 6:19–6:25 deaths are the wipe completing.
 
-**Resolution.** **Tank buster** ([primitives.md](../primitives.md#tankbuster)), the bookend twin of UE#1, taken here as a **2-tank shared** hit with stacked mit. The static's sheet models UE#2 as the explicit shared "Kitchen Sink" buster (vs UE#1's solo invuln) — consistent with both tanks showing ~equal unmit here.
+**Resolution.** **Proximity tank buster** ([primitives.md](../primitives.md#tankbuster)), the bookend twin of UE#1 — same **nearest + farthest** targeting, with the two tanks positioned as the nearest/farthest bodies. Taken here as a 2-tank covered hit (~75–77% mit). The static's sheet models UE#2 as the shared "Kitchen Sink" buster (vs UE#1's solo invuln) — consistent with both tanks showing ~equal unmit here.
 
-**Open questions.** As UE#1: confirm whether the 2-tank share is forced or chosen, and the intended invuln-vs-Kitchen-Sink split between the two Embraces.
+**Open questions.** Whether the two Embraces share a recast/positioning pattern that forces the invuln-vs-Kitchen-Sink split the sheet uses, or it's a free choice.
 
 ---
 
