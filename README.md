@@ -36,6 +36,8 @@ scripts/
 
 Project state, decisions, and roadmap live in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md); the
 glossary is [CONTEXT.md](CONTEXT.md); authoring guidance for contributors is [CLAUDE.md](CLAUDE.md).
+A reusable layout for comp-agnostic mit-plan sheets (planning mode) is in
+[docs/mit-sheet-conventions.md](docs/mit-sheet-conventions.md).
 
 ---
 
