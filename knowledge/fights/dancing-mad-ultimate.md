@@ -243,11 +243,11 @@ Source for this section: the clean clear `ApYjk8dZqz7LRbMy` f1 (intended executi
 
 ## Wings of Destruction (phase-end heavy hit)
 
-**Observed.** At **6:11–6:12**, `Wings of Destruction` — magical, two-hit. **Clear:** ~669k unmit at ~57–61% mit → ~166–246k taken (survived). **Failure (f21):** the four non-tank players (DRG/BLM/BRD/AST) took **~985k–1.13M unmit at only 27% mit → ~720–824k taken** on the first hit and **died 6:14**; the **DRK survived at 75% mit** (636k → 161k).
+**Observed.** At **6:11–6:12**, `Wings of Destruction` — magical, two-tick. **Clear:** hits **only the two tanks** (PLD + DRK) — ~384–669k unmit at ~57–61% mit → ~166–247k taken, survived (the summary's "4 hits" = 2 tanks × 2 ticks, *not* 4 players). **Failure (f21):** with the PLD already down (died 6:12), Wings landed on **four non-tanks** (DRG/BLM/BRD/AST) at ~985k–1.13M unmit, only 27% mit → ~720–824k taken → **dead 6:14**; the DRK ate its share at 75% mit and lived.
 
-**Resolution.** A **heavy magical hit** at the phase end demanding a deep mit stack (and likely a share/position). The f21 wipe is a **realized-mit / under-share failure**: 27% party mit left ~800k on squishies (lethal), while the tank's 75% personal stack lived — the mit gap is the story, not an overkill mechanic failure. The per-player unmit being **lower in the clear (669k) than the wipe (~1.1M)** suggests Wings is **shared/divided** — fewer bodies in the wipe's group → bigger per-head hit ([fundamentals.md](../fundamentals.md#how-mitigation-stacks)).
+**Resolution.** A **two-tank mechanic** — by design **only the two tanks are hit** (each takes their own ~669k magical hit, covered by tank mit; the clear's unequal PLD vs DRK values say it's two tank-targeted hits, not one shared stack). A non-tank taking Wings is a **positioning / tank-handling failure**, *not* a party-mit gap — so it is **not** a raidwide and party %-mit is the wrong tool; the fix is the two tanks being the only bodies in the hit. The f21 wipe is precisely that: a tank down/out of position left the hit to catch four squishies for ~800k each (lethal). [primitives.md → Tankbuster](../primitives.md#tankbuster), two-tank variant.
 
-**Open questions.** Is Wings a **stack/role-split** (the lower clear unmit implies sharing) or a flat raidwide whose unmit varied for another reason? Intended mit plan (party % + barrier vs a designated share)? Why only those four players took the lethal version in f21 — a positional/group failure?
+**Open questions.** The exact positioning rule that keeps Wings on the tanks and off the party (proximity? a tank-only target? tanks intercepting a line?); what killed the PLD at 6:12 in f21 (the trigger that cascaded the party into Wings).
 
 ## Ultimate Embrace #2 (phase-end shared buster)
 
