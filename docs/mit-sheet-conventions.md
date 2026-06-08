@@ -53,8 +53,13 @@ that truly need a full-party barrier.
 Keep the main party-mit sheet free of tank-survival detail. Put **busters on per-pairing tabs**
 (WAR/PLD, GNB/DRK, …) with the two tanks' personal mits and invuln assignments. Common shorthand:
 
-- **Kitchen Sink** — throw everything *short of* an invuln at a buster
-- **Invuln** — a true invulnerability (Hallowed Ground, Holmgang, Living Dead, Superbolide)
+- **Kitchen Sink** — the busting tank uses **all of its own self-mit** cooldowns (everything short
+  of an invuln)
+- **Kitchen Sink (co-tank buddy mit)** — a Kitchen Sink **plus** the co-tank's buddy mit cast on the
+  busting tank, for one extra layer when a tank's solo stack runs light (notably PLD, whose
+  Intervention is ally-only)
+- **Invuln** — a true invulnerability (Hallowed Ground, Holmgang, Living Dead, Superbolide), used
+  when busters land too close together to re-cover with cooldowns
 
 A buster row on the main sheet therefore has **empty party columns** — tank survival is resolved on
 the pairing tab; any party-wide soak damage is covered by oGCD + carryover.
