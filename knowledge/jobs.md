@@ -29,6 +29,8 @@ Each entry records:
 - *Mechanism:* `percent-mit`, `barrier`, `heal`, `enemy-debuff` (reduces the boss's damage *dealt*)
 - *Special:* `tank-mit`, `invuln`, `knockback-resist`, `cleanse`
 
+**"Buddy mit"** — a `targeted-mit` + `tank-mit` cooldown is colloquially called *buddy mit*, because tanks usually throw it on their co-tank ("tank buddy"). The set: PLD [Intervention](#intervention), WAR [Nascent Flash](#nascent-flash), GNB [Heart of Corundum](#heart-of-stone--heart-of-corundum), DRK [The Blackest Night](#the-blackest-night), and DRK [Oblation](#oblation). Intervention and Nascent Flash are **ally-only** (their self-cast counterparts are Holy Sheltron / Bloodwhetting); HoC, TBN, and Oblation can target **self or ally**. DRK is the outlier with **two** buddy-mit tools (TBN + Oblation). See [Buddy mit](../CONTEXT.md) in the glossary.
+
 ## Role actions are authored once
 
 Role actions (Rampart, Reprisal, Addle, etc.) are shared across every job of a role. They are defined **once** in the Role Actions section below; each job entry lists only its **job-specific** kit and references its role block. This keeps the file DRY — a role action changes in one place.
@@ -201,7 +203,7 @@ Role actions: see **Tank role actions**. PLD is the shield/barrier tank — much
 
 # Dark Knight (DRK)
 
-Role actions: see **Tank role actions**. DRK pairs strong personal mit (Shadowed Vigil −40%, plus a magic-weighted Dark Mind) with a flexible self-or-ally barrier (The Blackest Night), a magic-weighted *party* mit (Dark Missionary), and an invuln (Living Dead). Two of its tools are magic-weighted, which makes DRK especially strong on magical fights.
+Role actions: see **Tank role actions**. DRK pairs strong personal mit (Shadowed Vigil −40%, plus a magic-weighted Dark Mind) with a flexible self-or-ally barrier (The Blackest Night) and a 2-charge self-or-ally −10% (Oblation), a magic-weighted *party* mit (Dark Missionary), and an invuln (Living Dead). It's the only tank with **two** buddy-mit tools (TBN + Oblation). Two of its tools are magic-weighted, which makes DRK especially strong on magical fights.
 
 ### Shadow Wall / Shadowed Vigil
 - **Log status(es):** `Shadow Wall`; at Lv.92 upgrades to `Shadowed Vigil` (+ `Vigilant`)
@@ -237,6 +239,7 @@ Role actions: see **Tank role actions**. DRK pairs strong personal mit (Shadowed
 - **Scope:** targeted (self or ally)  **Coverage:** all
 - **Duration / Recast:** 10s / 60s (2 charges)
 - **Tags:** `targeted-mit`, `percent-mit`, `tank-mit`
+- **Agent note:** DRK's *second* [buddy mit](#tag-vocabulary) alongside The Blackest Night — 2 charges of −10%, self or ally. Most tanks carry a single buddy-mit tool; DRK can cover itself and the co-tank concurrently (or double-cover one target).
 
 ### Living Dead
 - **Log status(es):** `Living Dead` → `Walking Dead` → `Undead Rebirth`

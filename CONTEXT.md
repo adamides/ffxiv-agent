@@ -64,6 +64,9 @@ In a mit sheet, the generic raid-mitigation slot a role presses for a raidwide �
 **Extra**:
 A spare/bonus cooldown a player layers *if free*, not part of the scheduled party-mit budget — e.g. PLD Passage of Arms (a positional cone, only on grouped windows). Lives in the sheet's "Extras" column, distinct from a [[Party Mit]] slot.
 
+**Buddy mit**:
+A single-target tank mitigation cooldown cast on the *co-tank* ("tank buddy"), hence the name — the colloquial label for the tanks' `targeted-mit` tools: PLD Intervention, WAR Nascent Flash, GNB Heart of Corundum, DRK The Blackest Night, DRK Oblation. Intervention and Nascent Flash are **ally-only** (their self-cast counterparts are Holy Sheltron / Bloodwhetting); Heart of Corundum, The Blackest Night, and Oblation can target self or ally. DRK uniquely carries two. Per-tool detail in [jobs.md](knowledge/jobs.md).
+
 **Vuln**:
 Vulnerability debuff — amplifies damage taken. In high-end content, treat as "cannot survive the next major hit."
 
